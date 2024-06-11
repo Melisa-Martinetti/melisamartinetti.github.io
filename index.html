@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/estrella.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion_enlace" href="#presentacion">
+                <h2 class="navegacion_titulo"> INFORMATORIO ETAPA 1 </h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#presentacion"> Inicio </a>
+                </li>
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#sobre-mi"> Sobre mi </a>
+                </li>
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#proyectos"> Proyectos </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="principal"> 
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion_contenedor_info">
+                <h1 class="presentacion_titulo"> Melisa Martinetti</h1>
+                <p class="presentacion_parrafo ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="presentacion_contenedor_botones">
+                    <a href="#sobre-mi" class="boton" role= "button" > SOBRE MI </a>
+                    <a href="./assets/docs/Curriculum Vitae - melisa martinetti.pdf" target="_blank" class="boton boton_oscuro" role="button">DESCARGAR CV</a>
+
+                </div>
+            </div>
+
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo"> Un poco sobre mi </h2>
+            <div class="articulo__contenedor_descripciones">
+              <section class="seccion_descripcion">
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen"
+                    src="./assets/images/en reunion/Sin título.jpg"
+                    alt="foto trabajando en la oficina"
+                    title="trabajando en la oficina"
+                  />
+                </div>
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                    Mi historia
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Me llamo Melisa Martinetti, tengo 28 años y vivo en la ciudad de Resistencia Provincia del Chaco.
+                    Actualmente me encuentro cursando la Etapa numero 1 del Informatorio.
+                    
+                </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Me gusta el trabajo en equipo, por eso considere iniciarme en el mundo de la programación. 
+                    Creo que es un espacio de constante interacción y aprendizaje mutuo.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Soy amante de los animales y la naturaleza. 
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Mi sueño es conocer varios países del mundo. 
+                  </p>
+                </div>
+              </section>
+              <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+                pero cambiaremos el orden de los elementos dejando la imagen al final -->
+              <section class="seccion_descripcion">
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                    Mis hobbies
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                   En mi tiempo libre me gusta rodearme de amigos, pasar un buen rato.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                   Leo libros y soy fanática del fútbol. Entreno en un equipo de fútbol femenino.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Tamién me gusta dibujar retratos con grafito y aprender nuevas habilidades.
+                  </p>
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen1"
+                    src="./assets/images/hobbie/futbol2.jpg"
+                    alt="equipo de futbol"
+                    title="foto de entrenamiento"
+                  />
+                </div>
+            </section>
+        </div>
+      </article>
+      <!-- repaso article sobre mi y su estructura -->
+
+      <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+      no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+      podran ir actualizando la informacion de esta seccion -->
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/abstract/rojo.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+              Este es mi primer intento de proyecto web
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/abstract/colores.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore necessitatibus doloribus adipisci dolorum cum et
+                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                nihil voluptates eos enim aperiam porro architecto et?
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/abstract/colores 2.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore necessitatibus doloribus adipisci dolorum cum et
+                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                nihil voluptates eos enim aperiam porro architecto et?
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/abstract/colores3.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore necessitatibus doloribus adipisci dolorum cum et
+                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                nihil voluptates eos enim aperiam porro architecto et?
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/abstract/colores4.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 5"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_5"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore necessitatibus doloribus adipisci dolorum cum et
+                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                nihil voluptates eos enim aperiam porro architecto et?
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src=".//assets/images/abstract/colores5.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 6"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">titulo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_6"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore necessitatibus doloribus adipisci dolorum cum et
+                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                nihil voluptates eos enim aperiam porro architecto et?
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </article>
+      <!-- repaso del articulo proyectos -->
+    </main>
+    <!-- repaso de todo lo incluido en la etiqueta main -->
+
+    <!-- Por ultimo deben agregar la etiqueta footer. 
+      En esta aparecera nuestra informacion de contacto y 
+      también inluiremos enlaces de navegacion y derechos. -->
+    <footer class="pie_de_pagina" role="contentinfo">
+      <!-- explicacion: la primer columna sera para nuestras redes,
+        cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/Melisa-Martinetti"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/abstract/github.jpg"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces_item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/melisamartinetti/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/abstract/ig.jpg"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://twitter.com/melisamartinett"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/abstract/x..png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="mailto:mail@mail.com"
+              target="_blank"
+              >Mail: melisamartinetti@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- por ultimo los derechos de la pagina -->
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+    <!-- repaso de los elementos en el footer -->
+  </body>
+</html>
