@@ -2,19 +2,19 @@
 es muy comun declarar las variables a utilizar */
 :root {
     /* colors */
-    --texto-primario: #dddddd;
-    --texto-secundario: #d1d1d1;
+    --texto-primario: #f7f2f2;
+    --texto-secundario: #000000;
     --fondo-primario: #0f0921;
-    --fondo-primario-transparente: #0f092180;
+    --fondo-primario-transparente: #9283bf80;
     --fondo-secundario: #0a0c13;
-    --color-primario: #2c2acb;
+    --color-primario: #35347b;
     --color-primario-apagado: #2422a3;
     --color-secundario: #9b70f9;
     --color-terciario: #6f6f6f;
   
     /* sizes */
     --presentacion-titulo-tamanio: 4rem;
-    --presentacion-titulo-tamanio-grande: 3.4rem;
+    --presentacion-titulo-tamanio-grande: 10rem;
     --presentacion-descripcion-tamanio: 1.2rem;
     --titulo-tamanio: 3rem;
     --sub-titulo-tamanio: 2rem;
@@ -51,7 +51,7 @@ es muy comun declarar las variables a utilizar */
 
   /* encabezado */
 .encabezado {
-    position: absolute;
+    position: center;
     width: 100%;
     left: 0;
     top: 0;
@@ -68,7 +68,7 @@ es muy comun declarar las variables a utilizar */
   }
   .navegacion__titulo {
     font-size: var(--titulo-tamanio);
-    text-shadow: 2px 2px 2px var(--fondo-secundario);
+    text-shadow: 4px 4px 4px var(--fondo-secundario);
   }
   
   /* principal */
@@ -183,7 +183,7 @@ es muy comun declarar las variables a utilizar */
     background-color: transparent;
     cursor: pointer;
   }
-  .seccion_descripcion__imagen{
+  .seccion_descripcion__imagen1{
     width: 300px;
     height: 300px;
     padding: 10px;
@@ -199,11 +199,42 @@ es muy comun declarar las variables a utilizar */
       background-color 0.3s ease, transform 0.3s ease,
       border-radius 0.1s 0.2s ease;
   }
+  
   .seccion_descripcion__imagen1{
     top: auto;
     bottom: 40px;
   }
+
+
+.seccion_descripcion__imagen{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  padding-bottom: 50px;
+  background-color: var(--texto-primario);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  transition: left 0.3s ease, right 0.3s ease, top 0.3s ease, bottom 0.3s ease,
+    width 0.3s ease, height 0.3s ease, padding 0.3s ease,
+    background-color 0.3s ease, transform 0.3s ease,
+    border-radius 0.1s 0.2s ease;
+}
   
+  .seccion_descripcion__imagen1:hover,
+  .seccion_descripcion__imagen1:focus{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--texto-primario);
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    transform: translateX(0);
+  }
+ 
   .seccion_descripcion__imagen:hover,
   .seccion_descripcion__imagen:focus{
     width: 100%;
@@ -215,7 +246,6 @@ es muy comun declarar las variables a utilizar */
     border-radius: 20px;
     transform: translateX(0);
   }
- 
   .seccion_descripcion__imagen1:hover,
   .seccion_descripcion__imagen1:focus{
     top: auto;
