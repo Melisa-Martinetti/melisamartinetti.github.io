@@ -222,9 +222,8 @@ es muy comun declarar las variables a utilizar */
     background-color 0.3s ease, transform 0.3s ease,
     border-radius 0.1s 0.2s ease;
 }
-  
-  .seccion_descripcion__imagen1:hover,
-  .seccion_descripcion__imagen1:focus{
+.seccion_descripcion__imagen:hover,
+  .seccion_descripcion__imagen:focus{
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -234,9 +233,9 @@ es muy comun declarar las variables a utilizar */
     border-radius: 20px;
     transform: translateX(0);
   }
- 
-  .seccion_descripcion__imagen:hover,
-  .seccion_descripcion__imagen:focus{
+  
+  .seccion_descripcion__imagen1:hover,
+  .seccion_descripcion__imagen1:focus{
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -251,6 +250,8 @@ es muy comun declarar las variables a utilizar */
     top: auto;
     bottom: 0;
   }
+  
+  
   
   
   .seccion_descripcion__info{
